@@ -19,6 +19,10 @@ gem 'pundit'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'upmin-admin'
+
+gem 'omniauth-facebook'
+gem "figaro"
+
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -32,3 +36,4 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
