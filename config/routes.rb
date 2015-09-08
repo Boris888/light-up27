@@ -1,4 +1,31 @@
 Rails.application.routes.draw do
+  # get 'contenus/index'
+
+  # get 'contenus/show'
+
+  # get 'contenus/new'
+
+  # get 'contenus/create'
+
+  # get 'contenus/edit'
+
+  # get 'contenus/update'
+
+  # get 'contenus/destroy'
+
+  # get 'reservations/index'
+
+  # get 'reservations/show'
+
+  # get 'reservations/new'
+
+  # get 'reservations/create'
+
+  # get 'reservations/edit'
+
+  # get 'reservations/update'
+
+  # get 'reservations/destroy'
   # get 'courses/index'
 
   # get 'courses/show'
@@ -13,6 +40,16 @@ Rails.application.routes.draw do
 
   # get 'courses/destroy'
 
+  resources :courses do
+    resources :contenus
+  end
+
+  get 'courses/contenu' => 'courses#contenu'
+
+   resources :users, only: [:show, :update, :destroy] do
+    resources :reservations, only: [:index]
+  end
+
 
 
   get 'omniauth_callbacks/facebook'
@@ -22,5 +59,5 @@ Rails.application.routes.draw do
   mount Upmin::Engine => '/admin'
   root to: 'courses#index'
   # devise_for :users
-  resources :users
+  # resources :users
 end

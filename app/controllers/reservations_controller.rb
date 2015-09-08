@@ -1,4 +1,4 @@
-class CoursesController < ApplicationController
+class ReservationsController < ApplicationController
   def index
   end
 
@@ -18,8 +18,5 @@ class CoursesController < ApplicationController
   end
 
   def destroy
-  end
-
-  def content
   end
 end
