@@ -130,7 +130,7 @@
     <div class="col-xs-12 col-sm-4">
 
       <div class="card">
-   <%= link_to image_tag('parcours.jpg'), course_contenus_path(:id), width:"10px", class: 'card-bg' %>
+   <%= link_to image_tag('parcours.jpg'), course_contenus_path(1), :size => '260x180', class: 'card-bg' %>
 
   <span class="card-shadow"></span>
   <!-- <span class="card-description">Popular</span> -->
@@ -149,13 +149,14 @@
     <div class="col-xs-12 col-sm-4">
 
        <div class="card">
-   <%= link_to image_tag('parcours.jpg'), course_contenus_path(:id), width:"10px", class: 'card-bg' %>
+
+   <%= link_to image_tag('food.jpg'), course_contenus_path(2), :size => '260x180', class: 'card-bg' %>
 
   <span class="card-shadow"></span>
   <!-- <span class="card-description">Popular</span> -->
   <span class="card-text">
     <!-- <h4>Some stuff</h4> -->
-    <p>Le parcours de l'auto-entrepreneur</p>
+    <p>L'alimentation saine</p>
   </span>
   <span class="card-user">
     <!-- <img src='parcours.jpg' class="avatar avatar-bordered"/> -->
@@ -168,13 +169,13 @@
     <div class="col-xs-12 col-sm-4">
 
        <div class="card">
-   <%= link_to image_tag('parcours.jpg'), course_contenus_path(:id), width:"10px", class: 'card-bg' %>
+   <%= link_to image_tag('lecture.png'), course_contenus_path(3), :size => '260x180', class: 'card-bg' %>
 
   <span class="card-shadow"></span>
   <!-- <span class="card-description">Popular</span> -->
   <span class="card-text">
     <!-- <h4>Some stuff</h4> -->
-    <p>Le parcours de l'auto-entrepreneur</p>
+    <p>La lecture rapide</p>
   </span>
   <span class="card-user">
     <!-- <img src='parcours.jpg' class="avatar avatar-bordered"/> -->
@@ -184,34 +185,75 @@
 </div>
       <!-- div class="card" -->
     </div>
+
+    <br><br>
+
+    <div class="col-xs-12 col-sm-4">
+      <!-- div class="card" -->
+        <div class="card">
+   <%= link_to image_tag('smoothie.jpg'), course_contenus_path(3), width:"10px", class: 'card-bg' %>
+
+  <span class="card-shadow"></span>
+  <!-- <span class="card-description">Popular</span> -->
+  <span class="card-text">
+    <!-- <h4>Some stuff</h4> -->
+    <p>Les meilleurs smoothies</p>
+  </span>
+  <span class="card-user">
+    <!-- <img src='parcours.jpg' class="avatar avatar-bordered"/> -->
+  </span>
+  <a href="#" class="card-link"></a>
+
+</div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <!-- div class="card" -->
+        <div class="card">
+   <%= link_to image_tag('crise.jpg'), course_contenus_path(3), width:"10px", class: 'card-bg' %>
+
+  <span class="card-shadow"></span>
+  <!-- <span class="card-description">Popular</span> -->
+  <span class="card-text">
+    <!-- <h4>Some stuff</h4> -->
+    <p>Comprender la crie économique</p>
+  </span>
+  <span class="card-user">
+    <!-- <img src='parcours.jpg' class="avatar avatar-bordered"/> -->
+  </span>
+  <a href="#" class="card-link"></a>
+
+</div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <!-- div class="card" -->
+        <div class="card">
+   <%= link_to image_tag('bce.jpg'), course_contenus_path(3), width:"100px", class: 'card-bg' %>
+
+  <span class="card-shadow"></span>
+  <!-- <span class="card-description">Popular</span> -->
+  <span class="card-text">
+    <!-- <h4>Some stuff</h4> -->
+    <p>Quel est le rêle de la BCE</p>
+  </span>
+  <span class="card-user">
+    <!-- <img src='parcours.jpg' class="avatar avatar-bordered"/> -->
+  </span>
+  <a href="#" class="card-link"></a>
+
+</div>
+
+    </div>
+
+
   </div>
 </div>
 
 
-
-
-
-
-
-
-
-
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-            <%= link_to image_tag('parcours.jpg'), course_contenus_path(:id), width:"10px" %>
-                    <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"> -->
-                        <div class="caption">
-                            <div class="caption-content">
-                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="card">
-
-
-
+<!--
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -264,7 +306,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Section -->
     <section class="success" id="about">
